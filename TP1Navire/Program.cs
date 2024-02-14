@@ -13,6 +13,7 @@ namespace TP1Navire
 
             TesterInstanciations();
 
+            Console.WriteLine("fin du programme, appuyer sur une touche");
             Console.ReadKey();
 
         }
@@ -36,9 +37,16 @@ namespace TP1Navire
 
         }
 
-        static string Affiche(Navire navire)
+        static void Affiche(Navire navire)
         {
-            return navire.ToString();
+            Console.WriteLine(navire.Imo);
+            Console.WriteLine(navire.Nom);
+            Console.WriteLine(navire.LibelleFret);
+            Console.WriteLine(navire.QteFretMaxi);
+
+            Console.WriteLine("Identification : ", navire.Imo, "\nNom : ", navire.Nom);
+
+
         }
 
     }
